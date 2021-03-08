@@ -9,6 +9,7 @@ fun main(){
 
     val tec = Scanner(System.`in`)
     var i =0
+
     print("Digite um número para ver a sua tabuada: ")
     val numero= tec.nextInt()
     while (i<11 && i >=0){
