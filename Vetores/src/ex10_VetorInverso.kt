@@ -17,17 +17,20 @@ fun main() {
     var vetorA = IntArray(tamanhoVetor)
     var aux = 0
     var menor = 0
+    var posicao =0
 
     for (i in 1..tamanhoVetor) {
         print("Digite um número: ")
         vetorA[aux] = tec.nextInt()
-        //menor = vetorA[0]
+        menor = vetorA[posicao]
         //menor
         if (menor > vetorA[aux]) {
             menor = vetorA[aux]
+            println("entrou no if")
+            posicao = posicao +1
         }
 
-        aux=aux+1
+      aux=aux+1
     }
 
     println("--------------------------------")
