@@ -29,7 +29,7 @@ fun main() {
         }
     }
     for (i in index.indices) {
-        soma = soma + index[i]
+        soma += index[i]
     }
 
     println("---------------------------------------")
