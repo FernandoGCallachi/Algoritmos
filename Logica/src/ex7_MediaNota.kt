@@ -25,13 +25,13 @@ fun main() {
 
     val mediaAluno = ((nota1 + nota2 + nota3) / numeroProvas)
 
-    println("A média do aluno é:" + mediaAluno)
+    println("A média do aluno é: $mediaAluno")
 
     if (mediaAluno >= 7) {
-        println("Status do aluno " + nome + ": Aprovado")
+        println("Status do aluno $nome: Aprovado")
     } else if (mediaAluno < 7 && mediaAluno > 5) {
-        println("Status do aluno " + nome + ": Recuperação")
+        println("Status do aluno $nome: Recuperação")
     } else {
-        println("Status do aluno " + nome + ": Reprovado")
+        println("Status do aluno $nome: Reprovado")
     }
 }
