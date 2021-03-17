@@ -1,10 +1,9 @@
-import java.util.*
-
 /*
 Elaborar um programa que leia um vetor A com dez elementos numéricos inteiros.
 Apresentar o total de elementos ímpares existente no vetor e também o percentual
 do valor total de números ímpares em relação à quantidade total de elementos armazenados.
  */
+import java.util.*
 
 fun main() {
 

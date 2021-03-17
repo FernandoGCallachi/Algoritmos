@@ -9,7 +9,6 @@ vetor B. Ao final, apresentar os elementos do vetor C.
 
  */
 fun main() {
-    println()
     println("Iremos calcular a subtração entre dois vetores")
     println("Apresente os cincos valores do vetor")
     println("----------------------------------------------")

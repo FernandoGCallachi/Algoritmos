@@ -1,9 +1,8 @@
-import java.util.*
-
 /*
 Elaborar um programa que leia 10 elementos inteiros e armazene em um vetor A.
 Apresentar os valores do vetor lido de maneira inversa, e identificar qual é o menor valor armazenado
 */
+import java.util.*
 
 fun main() {
 

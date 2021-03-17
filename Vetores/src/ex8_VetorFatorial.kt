@@ -8,8 +8,6 @@ Apresentar os vetores A e B.
  */
 
 fun main() {
-
-    println()
     println("Iremos calcular a fatoração dos valores de um vetor")
     println("Apresente os cincos valores do vetor")
     println("----------------------------------------------")

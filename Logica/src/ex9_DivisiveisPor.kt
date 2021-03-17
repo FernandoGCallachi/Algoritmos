@@ -21,28 +21,39 @@ fun main() {
     print("Digite o quarto número :")
     val D = tec.nextInt()
 
+    /*
+     100
+   2 50,0
+   3 33,3
+     */
+
+
     //Condição primeiro número
     if (A % 2 == 0) {
         println("O número " + A + " é divisivel por 2")
-    } else if (A % 3 == 0) {
+    }
+    if (A % 3 == 0) {
         println("O número " + A + " é divisivel por 3")
     }
     //Condição segundo número
     if (B % 2 == 0) {
         println("O número " + B + " é divisivel por 2")
-    } else if (B % 3 == 0) {
+    }
+    if (B % 3 == 0) {
         println("O número " + B + " é divisivel por 3")
     }
     //Condição terceiro número
     if (C % 2 == 0) {
         println("O número " + C + " é divisivel por 2")
-    } else if (C % 3 == 0) {
+    }
+    if (C % 3 == 0) {
         println("O número " + C + " é divisivel por 3")
     }
     //Condição quarto número
     if (D % 2 == 0) {
         println("O número " + D + " é divisivel por 2")
-    } else if (D % 3 == 0) {
+    }
+    if (D % 3 == 0) {
         println("O número " + D + " é divisivel por 3")
     }
 }

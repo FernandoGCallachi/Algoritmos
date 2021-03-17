@@ -1,10 +1,9 @@
-import java.util.*
-
 /*
 Elaborar um programa que leia 3 valores inteiros, armazene-os em um vetor,
 e percorra o vetor calculando o fatorial de cada valor lido. No final,
 deverá apresentar o somatórios dos valores calculados.
  */
+import java.util.*
 
 fun main() {
     val tec = Scanner(System.`in`)
@@ -29,9 +28,8 @@ fun main() {
         }
     }
     for (i in index.indices) {
-        soma = soma + index[i]
+        soma += index[i]
     }
-
     println("---------------------------------------")
     println("A fatoração dos números em ordem é: ${index.contentToString()}")
     print("A somatoria dos valores da fatoração é: $soma")

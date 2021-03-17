@@ -15,16 +15,16 @@ fun main() {
     val tamanhoVetor = 2
     var vetorA = IntArray(tamanhoVetor)
     var numero = 1
-    var n1= 0
-    var n2= 0
+    var n1 = 0
+    var n2 = 0
     println("Iremos calcular o MDC de dois números inteiros")
 
     for (i in vetorA.indices) {
         print("Digite o $numero° número inteiro:")//x
         vetorA[i] = tec.nextInt()
         numero++
-        n1= vetorA[0]
-        n2= vetorA[1]
+        n1 = vetorA[0]
+        n2 = vetorA[1]
         while (vetorA[1] != 0) {
             val resto = vetorA[0] % vetorA[1]
             vetorA[0] = vetorA[1]

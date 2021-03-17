@@ -1,6 +1,3 @@
-import java.util.*
-import kotlin.collections.ArrayList
-
 /*
 Elaborar um programa que leia dois vetores A e B com 5 elementos.
 O vetor A deve aceitar apenas a entrada de valores divisíveis por 2 ou 3,
@@ -9,6 +6,7 @@ A entrada dos vetores deve ser validada pelo programa, e não pelo usuário.
 Construir um vetor C que seja o resultado da junção dos vetores A e B,
 de forma que contenha 10 elementos. Apresentar os elementos do vetor C.
  */
+import java.util.*
 
 fun main() {
 

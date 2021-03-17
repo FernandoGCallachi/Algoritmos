@@ -1,11 +1,10 @@
-import java.util.*
-
 /*
 Elaborar um programa que leia 10 elementos (valores reais)
 para temperatura em graus Celsius e armazene esses valores em um vetor A.
 O programa ao final deve apresentar a menor, a maior e a média das temperaturas lidas.
 
  */
+import java.util.*
 
 fun main() {
 
