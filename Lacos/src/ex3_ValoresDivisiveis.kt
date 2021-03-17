@@ -8,7 +8,7 @@ fun main() {
     do {
         if ((numero % 4 == 0)) {
             println(numero)
-            numero = numero + 1
+            numero += 1
         }
         numero++
     } while (numero <= 200)
