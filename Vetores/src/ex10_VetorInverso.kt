@@ -15,38 +15,33 @@ fun main() {
     val tec = Scanner(System.`in`)
     val tamanhoVetor = 3
     var vetorA = IntArray(tamanhoVetor)
-    var aux = 0
     var menor = 0
-    var posicao =0
+    var posicao = 0
+    var contador =0
 
-    for (i in 1..tamanhoVetor) {
+    for (i in vetorA.indices) {
         print("Digite um número: ")
-        vetorA[aux] = tec.nextInt()
+        vetorA[i] = tec.nextInt()
+        contador++
         menor = vetorA[posicao]
         //menor
-        if (menor > vetorA[aux]) {
-            menor = vetorA[aux]
-            println("entrou no if")
-            posicao = posicao +1
+        if (menor > vetorA[i]) {
+            menor = vetorA[i]
+            posicao++
         }
-
-      aux=aux+1
     }
-
-    println("--------------------------------")
-    println("Vetor A:"+Arrays.toString(vetorA))
-    print("Vetor A invertido :")
-
-    //invertendo o array
+    println("Vetor A:" + Arrays.toString(vetorA))
+    print("O vator invertido é: ")
+    var aux2 = contador -1
     print("[")
-    var aux2 = aux -1
     while (aux2>=0) {
-        print(" "+vetorA[aux2]+" ")
+        print(vetorA[aux2])
         aux2=aux2-1
     }
     println("]")
-
-    //menor valor
     println("O menor valor alocado foi:$menor")
+
+
+
 
 }

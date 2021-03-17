@@ -16,22 +16,19 @@ fun main() {
     val tec = Scanner(System.`in`)
     val tamanhoVetor = 5
     var vetorA = IntArray(tamanhoVetor)
-    var aux = 0
-    var impar =0
+    var impar = 0
 
     println("Insira o valor do primeiro array")
-    for (i in 1..tamanhoVetor) {
+    for (i in vetorA.indices) {
         print("Digite o número: ")
-        vetorA[aux] = tec.nextInt()
-        if (vetorA[aux]%2!=0){
-            impar = impar+1
+        vetorA[i] = tec.nextInt()
+        if (vetorA[i] % 2 != 0) {
+            impar += 1
         }
-        aux=aux+1
     }
+    val porcentagem = ((impar / tamanhoVetor.toDouble()) * 100)
 
-    val porcentagem= ((impar/tamanhoVetor.toDouble())*100)
-
-    println("Vetor A:"+ Arrays.toString(vetorA))
-    println("Quantidade de números impares do array:"+ impar)
+    println("Vetor A:${vetorA.contentToString()}")
+    println("Quantidade de números impares do array:$impar")
     println("A porcentagem de numeros impares é de: $porcentagem%")
 }

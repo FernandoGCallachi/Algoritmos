@@ -6,20 +6,20 @@ do volume de uma caixa retangular, utilizando a fórmula:
 Volume ← Comprimento * Largura * Altur
  */
 
-fun main(){
+fun main() {
     val tec = Scanner(System.`in`)
 
     println("Calculando o volume de uma caixa retangular.")
     println("Informe as seguintes medidas:")
 
     print("Comprimento:")
-    val comprimento=tec.nextFloat()
+    val comprimento = tec.nextFloat()
     print("Largura:")
-    val largura =tec.nextFloat()
+    val largura = tec.nextFloat()
     print("Altura:")
-    val altura=tec.nextFloat()
+    val altura = tec.nextFloat()
 
-    var Volume= comprimento * largura * altura
+    val volume = comprimento * largura * altura
 
-    println("O volume da caixa é de:"+Volume)
+    println("O volume da caixa é de:$volume")
 }

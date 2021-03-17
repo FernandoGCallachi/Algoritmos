@@ -11,12 +11,12 @@ fun main() {
     val tec = Scanner(System.`in`)
 
     print("informe um valor numericos inteiros que esteja entre 1 e 9: ")
-    val numero= tec.nextInt()
+    val numero = tec.nextInt()
 
     //Condição do número
-    if (numero<=9 && numero>=1){
+    if (numero <= 9 && numero >= 1) {
         println("O número informado está dentro da faixa permitida")
-    }else {
+    } else {
         println("O valor está fora da faixa permitida")
     }
 }

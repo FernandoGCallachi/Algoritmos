@@ -10,23 +10,26 @@ Se o resto r for diferente de zero, o MDC de x e y é igual ao MDC de y e r.
 O processo se repete até que o valor do resto da divisão seja zero.
  */
 
-fun main(){
-
-
-    var tec = Scanner(System.`in`)
+fun main() {
+    val tec = Scanner(System.`in`)
+    val tamanhoVetor = 2
+    var vetorA = IntArray(tamanhoVetor)
+    var numero = 1
+    var n1= 0
+    var n2= 0
     println("Iremos calcular o MDC de dois números inteiros")
 
-    print("Digite o primeiro número inteiro:")//x
-    var primeiroNumero = tec.nextInt()
-    print("Digite o segundo número inteiro:")//y
-    var segundoNumero = tec.nextInt()
-
-    var MDCXY = arrayOf(primeiroNumero,segundoNumero)//MDC XY
-
-    while (segundoNumero!= 0){
-        val resto = primeiroNumero%segundoNumero
-        primeiroNumero=segundoNumero
-        segundoNumero=resto
+    for (i in vetorA.indices) {
+        print("Digite o $numero° número inteiro:")//x
+        vetorA[i] = tec.nextInt()
+        numero++
+        n1= vetorA[0]
+        n2= vetorA[1]
+        while (vetorA[1] != 0) {
+            val resto = vetorA[0] % vetorA[1]
+            vetorA[0] = vetorA[1]
+            vetorA[1] = resto
+        }
     }
-    println("["+MDCXY.get(0)+"]["+MDCXY.get(1)+"] MDC = " + primeiroNumero)
+    println("[$n1][$n2] MDC = ${vetorA[0]}")
 }

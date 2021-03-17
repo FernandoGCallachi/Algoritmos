@@ -7,16 +7,16 @@ Calcular a potência, e exibir a operação calculada, e o resultado obtido.
 Math.pow(x, y);
  */
 
-fun main(){
+fun main() {
     val tec = Scanner(System.`in`)
 
     println("CALCULANDO UMA POTENCIA")
     println("Informe dois valores")
 
     print("Valor da base:")
-    val base=tec.nextDouble()
+    val base = tec.nextDouble()
     print("Valor do expoente:")
-    val expoente =tec.nextDouble()
+    val expoente = tec.nextDouble()
 
-    println("O valor da potencia è: "+Math.pow(base,expoente))
+    println("O valor da potencia è: ${Math.pow(base, expoente)}")
 }

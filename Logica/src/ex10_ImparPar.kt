@@ -6,6 +6,7 @@ mensagem informando se o valor fornecido é par ou ímpar.
 fun main() {
     val tec = Scanner(System.`in`)
 
+    println()
     println("informe um valor numericos inteiros e veja se é par ou impar")
     println()
 

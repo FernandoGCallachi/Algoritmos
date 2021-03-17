@@ -23,31 +23,30 @@ fun main() {
     var tamanhoVetorA = 2
     var vetorA = IntArray(tamanhoVetorA)
     var condicaoA = 0
-    var auxA = 0
+    var aux =0
+
 
     //Variaveis B
     var tamanhoVetorB = 2
     var vetorB = IntArray(tamanhoVetorB)
     var condicaoB = 0
-    var auxB = 0
+    var auxB =0
+
 
     //VETOR A (suas condições)
     println("Insira o valor do primeiro array")
     println("Aceita apenas a entrada de valores divisíveis por 2 ou 3")
-    for (i in 1..tamanhoVetorA) {
+    for (i in aux..tamanhoVetorA) {
         while (tamanhoVetorA > 0) {
-
             print("Digite o número: ")
             condicaoA = tec.nextInt()
 
-
             if (condicaoA % 2 == 0 || condicaoA % 3 == 0) {
-                vetorA[auxA] = condicaoA
-                auxA = auxA + 1
-                tamanhoVetorA = tamanhoVetorA - 1
+                vetorA[aux] = condicaoA
+                tamanhoVetorA -= 1
+                aux++
             } else {
                 println("Informe apenas valores divisíveis por 2 ou 3...")
-
             }
         }
     }
@@ -57,21 +56,17 @@ fun main() {
     //VETOR B (suas condições)
     println("Insira o valor do segundo array")
     println("Aceita apenas a entrada de valores que não sejam múltiplos de 5")
-    for (i in 1..tamanhoVetorB) {
-
+    for (i in auxB..tamanhoVetorA) {
         while (tamanhoVetorB > 0) {
-
             print("Digite o número: ")
             condicaoB = tec.nextInt()
 
-
             if ((condicaoB * 5) % 2 == 0) {
                 vetorB[auxB] = condicaoB
-                auxB = auxB + 1
-                tamanhoVetorB = tamanhoVetorB - 1
+                tamanhoVetorB -= 1
+                auxB++
             } else {
                 println("Informe apenas valores multiplos de 5...")
-
             }
         }
     }
@@ -80,8 +75,8 @@ fun main() {
     var conteudoC = (Arrays.toString(vetorA + vetorB))
     var vetorC = arrayListOf(conteudoC)
 
-    println("Vetor A:" + Arrays.toString(vetorA))
-    println("Vetor B:" + Arrays.toString(vetorB))
+    println("Vetor A:${Arrays.toString(vetorA)}")
+    println("Vetor B:${Arrays.toString(vetorB)}")
     println("Vetor C:$vetorC")
 }
 

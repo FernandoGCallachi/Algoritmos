@@ -7,7 +7,7 @@ e também a quantidade de de reais disponível com o usuário e
 armazenar em variáveis o valor da conversão antes da apresentação.
  */
 
-fun main(){
+fun main() {
     val tec = Scanner(System.`in`)
 
     println()
@@ -15,11 +15,11 @@ fun main(){
     println("--------------------------")
 
     print("Digite o valor da cotação atual:")
-    val cotacao=tec.nextFloat()
+    val cotacao = tec.nextFloat()
 
     print("Digite a quantidade de reias:")
-    val reais=tec.nextFloat()
+    val reais = tec.nextFloat()
 
-    val valorAtual= reais/cotacao
-    println("você possui "+valorAtual+" dólares.")
+    val valorAtual = reais / cotacao
+    println("você possui $valorAtual dólares.")
 }

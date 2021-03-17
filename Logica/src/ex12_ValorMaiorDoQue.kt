@@ -16,15 +16,15 @@ fun main() {
     print("Digite o segundo número :")
     val segundoNumero = tec.nextInt()
     print("Digite o terceiro número :")
-    val terceiroNumero= tec.nextInt()
+    val terceiroNumero = tec.nextInt()
 
-    val soma= primeiroNumero+segundoNumero+terceiroNumero
+    val soma = primeiroNumero + segundoNumero + terceiroNumero
 
-    println("A soma dos númeors informados é:"+soma)
+    println("A soma dos númeors informados é:" + soma)
 
-    if (soma<=100){
+    if (soma <= 100) {
         println("O valor não é maior que 100")
-    }else{
+    } else {
         println("O valor é maior que 100")
     }
 }
