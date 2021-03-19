@@ -24,7 +24,6 @@ class MatrizComposta {
         for (lin = 0; lin < elementos; lin++) {
             System.out.print("Digite um valor: ");
             vertorA[lin] = tec.nextInt();
-
         }
         //MATRIZ B
         System.out.println("=== VETOR B ===");
