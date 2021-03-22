@@ -9,8 +9,9 @@ public class QuickSort {
         int invertido[] = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
         int aleatorio[] = {3, 6, -2, 1, 5, -4, 8, 7, 9};
         int negativo[] = {-1, -2, -3, -4, -5, -6, -7, -8, -9};
+        int repetido[] = {1,1,2,2,5,5,4,4,6,8,10};
 
-        int vetor[] = negativo;
+        int vetor[] = aleatorio;
 
         //prnt do vetor antes dele ser ordenado
         System.out.println("Desordenado");
@@ -26,7 +27,7 @@ public class QuickSort {
         }
     }
 
-    static void quicksort(int[] vetor, int esquerda, int direita) {
+    public static void quicksort(int[] vetor, int esquerda, int direita) {
         if (esquerda < direita) {// se o elemento menor estiver a esquerda
             int pivo = particao(vetor, esquerda, direita);// achei o pivo, menores para esquerda, maiores para direita
             quicksort(vetor, esquerda, pivo - 1);//ordenar da esquerda até o pivo
@@ -34,11 +35,12 @@ public class QuickSort {
         }
     }
 
-    static int particao(int[] vetor, int esquerda, int direita) {
+    public static int particao(int[] vetor, int esquerda, int direita) {
         int meio = (int) (esquerda + direita) / 2;
         int pivo = vetor[meio];
         int i = esquerda - 1;
         int j = direita + 1;
+
         while (true) {
             do {
                 i++;

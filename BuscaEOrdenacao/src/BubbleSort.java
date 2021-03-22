@@ -8,8 +8,7 @@ public class BubbleSort {
         int aleatorio[] = {3, 6, -2, 1, 5, -4, 8, 7, 9};
         int negativo[] = {-1, -2, -3, -4, -5, -6, -7, -8, -9};
 
-
-        int vetor[] = aleatorio;
+        int vetor[] = negativo;
 
         //print do vetor antes do algoritmo aplicado
         System.out.println("====Vetor====");
